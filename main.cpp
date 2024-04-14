@@ -4,9 +4,9 @@ void invert(uint8_t* bts, size_t length, size_t start, size_t end)
 {
     for (size_t i = 0; i < length; ++i)
     {
-        uint8_t memoryByte = bts[i];
+        uint8_t memory_byte = bts[i];
         uint8_t mask = ((1 << (end - start + 1)) - 1) << start;
-        bts[i] = memoryByte ^ mask;
+        bts[i] = memory_byte ^ mask;
     }
 }
 
